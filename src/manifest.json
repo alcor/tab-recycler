@@ -1,0 +1,31 @@
+{
+  "name": "Tab Recycler",
+  "short_name": "Tab Recycler",
+  "description": "Recycles tabs left behind by Figma, Zoom, and Paper when they open their native app.",
+  "version": "0.6",
+  "icons": {
+      "16": "img/icon16.png",
+      "32": "img/icon32.png",
+      "48": "img/icon48.png",
+      "128": "img/icon128.prg"      
+  },
+  "incognito": "split",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.figma.com/file/*"],
+      "js": ["detect_figma.js"]
+    }, {
+      "matches": ["https://zoom.us/*", "https://*.zoom.us/*"],
+      "include_globs": ["*&status=success"],
+      "js": ["detect_default.js"]
+    }, {
+      "matches": ["https://paper.dropbox.com/pad-desktop-redirect"],
+      "js": ["detect_default.js"]
+    }
+  ],
+  "manifest_version": 2
+}
