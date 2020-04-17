@@ -1,5 +1,8 @@
+
 # Chrome Tab Recycler
 Recycles tabs left behind by apps like Figma, Zoom, and Paper when they open their native app.
+
+![Tab Recycler Logo](https://github.com/alcor/tab-recycler/raw/master/src/img/icon48.png)
 
 Install it from the [⬇️ Chrome Web Store](https://chrome.google.com/webstore/detail/nbcnplijgopjihcgplgbhagnpopnomdi/)
 
