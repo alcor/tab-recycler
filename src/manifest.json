@@ -1,8 +1,8 @@
 {
   "name": "Tab Recycler",
   "short_name": "Tab Recycler",
-  "description": "Recycles tabs left behind by Figma, Zoom, and Paper when they open their native app.",
-  "version": "0.8",
+  "description": "Recycles tabs left behind by tools like Zoom and Figma when they open their native app.",
+  "version": "0.9",
   "icons": {
       "16": "img/icon16.png",
       "32": "img/icon32.png",
@@ -28,7 +28,7 @@
     }
   ],
   "permissions": [
-    "tabs", "storage"
-  ],
+    "tabs",
+    "storage"],
   "manifest_version": 2
 }
