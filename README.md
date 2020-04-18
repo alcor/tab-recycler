@@ -1,6 +1,6 @@
 
 # Chrome Tab Recycler
-Recycles tabs left behind by apps like Figma, Zoom, and Paper when they open their native app.
+Recycles tabs left behind by apps like Zoom and Figma when they open their native app.
 
 ![Tab Recycler Logo](https://github.com/alcor/tab-recycler/raw/master/src/img/icon48.png)
 
@@ -11,6 +11,5 @@ This extension uses a combination of url monitoring and content scripts to close
 Currently Supported:
 - Figma - http://figma.com
 - Zoom - http://zoom.us
-- Dropbox Paper - https://paper.dropbox.com
 
 Request support for new tools! - https://github.com/alcor/tab-recycler/issues
