@@ -3,10 +3,10 @@ var whitelist = [
   /https:\/\/paper.dropbox.com\/pad-desktop-redirect.*/
 ]
 
-var enabled;
-chrome.storage.sync.get({ enabled: true }, function(items) {
-  enabled = items.enabled
-});
+var enabled = true;
+// chrome.storage.sync.get({ enabled: true }, function(items) {
+//   enabled = items.enabled
+// });
 
 // chrome.browserAction.onClicked.addListener(function () {
 //   enabled = !enabled;
@@ -34,7 +34,6 @@ function closeTab(tabId, delay) {
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if (request.action == "close") {
-      closeTab(sender.tab.id, 5000);
-
+      if (enabled) closeTab(sender.tab.id, 5000);
     }
   });
