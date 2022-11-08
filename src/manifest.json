@@ -12,6 +12,12 @@
     },
     "default_title": "Tab Recycler"
   },
+  "icons": {
+    "16": "img/icon16.png",
+    "32": "img/icon32.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  },
   "incognito": "split",
   "background": {
     "service_worker": "background.js"
@@ -31,6 +37,6 @@
       "js": ["detect_default.js"]
     }
   ],
-  "permissions": ["tabs"],
+  "permissions": [],
   "manifest_version": 3
 }
